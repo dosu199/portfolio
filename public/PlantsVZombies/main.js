@@ -324,19 +324,19 @@ function main() {
     }
 
     let plantImg = new Image()
-    plantImg.src = "images/plant.png"
+    plantImg.src = "/PlantsVZombies/images/plant.png"
 
     let specialPlantImg = new Image()
-    specialPlantImg.src = "images/specialPlant.png"
+    specialPlantImg.src = "/PlantsVZombies/images/specialPlant.png"
 
     let sunImg = new Image()
-    sunImg.src = "images/sun.png"
+    sunImg.src = "/PlantsVZombies/images/sun.png"
 
     let enemyImg = new Image()
-    enemyImg.src = "images/zombie.png"
+    enemyImg.src = "/PlantsVZombies/images/zombie.png"
 
     let specialGameEndBulletImg = new Image()
-    specialGameEndBulletImg.src = "images/specialBullet.png"
+    specialGameEndBulletImg.src = "/PlantsVZombies/images/specialBullet.png"
 
     let gameBoard = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],

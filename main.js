@@ -24,20 +24,20 @@ app.get("/contact", (req, res) => {
 })
 
 app.get("https://suad-portfolio.herokuapp.com/plantsVsZombies", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/PlantsVZombies/index.html`));
+    res.sendFile(path.join(`${__dirname}/public/PlantsVZombies/index.html`));
 })
 
 app.get("https://suad-portfolio.herokuapp.com/twenty-forty-eight", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/twenty-forty-eight/index.html`));
+    res.sendFile(path.join(`${__dirname}/public/twenty-forty-eight/index.html`));
 })
 
-/*app.get("https://suad-portfolio.herokuapp.com/tetris", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/tetris/index.html`));
-})*/
+app.get("https://suad-portfolio.herokuapp.com/tetris", (req, res) => {
+    res.sendFile(path.join(`${__dirname}/public/tetris/index.html`));
+})
 
-/*app.get("https://suad-portfolio.herokuapp.com/snake", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/snake/index.html`));
-})*/
+app.get("https://suad-portfolio.herokuapp.com/snake", (req, res) => {
+    res.sendFile(path.join(`${__dirname}/public/snake/index.html`));
+})
 
 app.get("https://suad-portfolio.herokuapp.com/cars", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/cars/index.html`));
@@ -59,7 +59,7 @@ app.get("https://suad-portfolio.herokuapp.com/dice", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/DiceNew/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/matchingGame", (req, res) => {
+app.get("https://suad-portfolio.herokuapp.com//matchingGame", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/MatchingGame/index.html`));
 })
 
