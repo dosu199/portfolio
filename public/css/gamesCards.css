@@ -35,6 +35,7 @@
     border-top: 0.5px solid lightgray;
     border-bottom: 0.5px solid lightgray;
     color: black;
+    font-size: 15px;
 }
 
 #games .about .title {
