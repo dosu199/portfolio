@@ -1,0 +1,80 @@
+body {
+    background-color: #f3f3f7;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 25px;
+    padding: 25px;
+    color: whitesmoke;
+ }
+
+ a:hover{
+ background-color:  #424949;
+  color: whitesmoke;
+ }
+
+ #btn {
+     visibility: hidden;
+ }
+
+ .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2345a64' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2345a64' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+ #carusel {
+ padding: 50px;
+ margin: 0px auto;
+ max-width: 1000px;
+background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 5px rgb(0 0 0 / 5%);
+ }
+
+ .carousel .carousel-item {
+   max-height: 550px;
+  }
+
+ @media screen and (max-width: 600px) {
+    .bar a:not(:first-child) {display: none;}
+    #btn {visibility: visible; float: right;}
+
+    .bar.responsive a {
+        float: none;
+        display: block;
+      }
+
+      #appStuff {
+        margin-bottom: 10px;
+      }
+
+
+
+      .bar.responsive #btn {
+        position: absolute;
+        right: 20px;
+        top: 60px;
+      }
+       body {
+         margin: 0px;
+         width: 100%;
+         height: 100%;
+         background-image: none;
+         background-color: #424949;
+       }
+
+
+      #carusel {
+        padding: 10px;
+        background-color: #424949;
+      }
+
+  }
+
+ 
+ 

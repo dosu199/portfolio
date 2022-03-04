@@ -1,0 +1,101 @@
+#games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+#games .card {
+    box-shadow: 0 0.5rem 0.5rem -0.4rem hsl(240deg 20% 20% / 50%);
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    max-width: 400px;
+    min-height: 450px;
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.img {
+    height: 300px;
+}
+
+#games .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-height: 130px;
+    padding: 20px;
+    word-wrap: break-word;
+    border-top: 0.5px solid lightgray;
+    border-bottom: 0.5px solid lightgray;
+    color: black;
+}
+
+#games .about .title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#games #btns {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 20px;
+    color: black;
+}
+.btn:hover {
+    background-color: #388E3C;
+}
+
+.btn {
+    padding: 10px 40px 10px 40px;
+    font-size: 17px;
+    background-color: #28a745;
+    border-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardImage {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage img {
+    height: 90%;
+}
+
+.horizontalImage img {
+    height: unset;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.github:hover {
+    color: #273746;
+} 
+
+.git {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
