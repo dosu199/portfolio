@@ -31,9 +31,9 @@ app.get("https://suad-portfolio.herokuapp.com/twenty-forty-eight", (req, res) =>
     res.sendFile(path.join(`${__dirname}/twenty-forty-eight/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/tetris", (req, res) => {
+/*app.get("https://suad-portfolio.herokuapp.com/tetris", (req, res) => {
     res.sendFile(path.join(`${__dirname}/tetris/index.html`));
-})
+})*/
 
 app.get("https://suad-portfolio.herokuapp.com/snake", (req, res) => {
     res.sendFile(path.join(`${__dirname}/snake/index.html`));
