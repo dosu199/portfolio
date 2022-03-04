@@ -23,43 +23,43 @@ app.get("/contact", (req, res) => {
     res.render("contact")
 })
 
-app.get("https://suad-portfolio.herokuapp.com/plantsVsZombies", (req, res) => {
+app.get("/plantsVsZombies", (req, res) => {
     res.sendFile(path.join(`${__dirname}/PlantsVZombies`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/twenty-forty-eight", (req, res) => {
+app.get("/twenty-forty-eight", (req, res) => {
     res.sendFile(path.join(`${__dirname}/twenty-forty-eight/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/tetris", (req, res) => {
+app.get("/tetris", (req, res) => {
     res.sendFile(path.join(`${__dirname}/tetris/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/snake", (req, res) => {
+app.get("/snake", (req, res) => {
     res.sendFile(path.join(`${__dirname}/snake/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/cars", (req, res) => {
+app.get("/cars", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/cars/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/colorTetris", (req, res) => {
+app.get("/colorTetris", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/colorTetris/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/calculator", (req, res) => {
+app.get("/calculator", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/calculator/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/caseOpening", (req, res) => {
+app.get("/caseOpening", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/case.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/dice", (req, res) => {
+app.get("/dice", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/DiceNew/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/matchingGame", (req, res) => {
+app.get("/matchingGame", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/matchingGame/index.html`));
 })
 
