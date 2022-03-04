@@ -1,0 +1,21 @@
+#gameContainer {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 85px auto;
+    border: 2px solid #D7DBDD;
+    padding: 5px;
+}
+
+.block {
+    border: 1px solid #F2F3F4;
+    width:10%;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+

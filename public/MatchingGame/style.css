@@ -1,0 +1,63 @@
+#parent {
+    margin: 0px auto;
+    margin-top: 90px;
+    width: 700px;
+    height: 580px;
+   margin-bottom: 10px;
+}
+
+.cardManager {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 580px;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 224px;
+    height: 139px;
+    margin-right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-image: url("2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-color: black;
+}
+
+.invisibleCard {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    color: black;
+    border-radius: 5px;
+    width: 220px;
+    height: 139px;
+    visibility: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+}
+
+#btn {
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    width: 92px;
+    background-color: black
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

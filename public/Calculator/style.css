@@ -1,0 +1,102 @@
+
+        body{
+        background-image: radial-gradient(#A2D9CE,#0E6655);
+        }
+        .btn:hover{
+        background-color: #273746;
+        }
+        #clear:hover{
+        background-color: #78281F;
+        }
+        #clear-one-val:hover{
+        background-color: #78281F;
+        }
+        .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 200px;
+        height: 50vh;
+        padding:40px 30px;
+        width: 350px;
+        background-color: #E3F2FD;
+        font-weight: bold;
+        font-size: 25px;
+        }
+        
+        .grid-container input{
+        font-size: 30px;
+        border: none;
+        margin: 4px;
+        width:60px;
+        border-radius: 50%;
+        margin-left: 15px;
+        text-align: center;
+        outline: none;
+        background-color: #17202A;
+        color: white;
+        }
+        
+        .grid-container input:last-child{
+        background-color: #E74C3C;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        width: 90%;
+        border-radius: 10px;
+        color: white;
+        }
+        
+        .grid-container input:last-child:hover{
+        background-color: #78281F;
+        }
+        
+        #display{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: white;
+        height: 25px;
+        border-radius: 10px;
+        text-align: right;
+        }
+        
+        #clear{
+        font-size: 30px;
+        border: none;
+        margin: 4px;
+        width:60px;
+        border-radius: 50%;
+        margin-left: 15px;
+        outline: none;
+        background-color: #E74C3C;
+        color: white;
+        }
+        
+        #clear-one-val{
+        font-size: 30px;
+        border: none;
+        margin: 4px;
+        width:60px;
+        border-radius: 50%;
+        margin-left: 15px;
+        outline: none;
+        background-color: #E74C3C;
+        color: white;
+        }
+        
+        .btn{
+        font-size: 30px;
+        border: none;
+        margin: 4px;
+        width:60px;
+        border-radius: 50%;
+        margin-left: 15px;
+        text-align: center;
+        outline: none;
+        background-color: #17202A;
+        color: white;
+        }

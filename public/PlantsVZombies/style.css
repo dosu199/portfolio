@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E8F5E9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gameBoard {
+    border: 1px solid black;
+    background-image: url("images/1.png");
+    margin-bottom: 20px;
+}
+
+#resources {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+}
+
+#resourceImg {
+    width: 75px;
+    height: 75px;
+    background-image: url("images/nodeSun.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#plantCost {
+    width: 75px;
+    height: 75px;
+    background-image: url("images/plantNode.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sunsCost {
+    width: 75px;
+    height: 75px;
+    background-image: url("images/nodeSunValue.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8F5E9;
+}
+
+#sunValue {
+    width: 75px;
+    height: 75px;
+    background-image: url("images/nodeSun.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sunCollectingValue {
+    width: 75px;
+    height: 75px;
+    background-image: url("images/nodeSunCollectingValue.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8F5E9;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #D7DBDD;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#specailPlantCost {
+    width: 75px;
+    height: 75px;
+    background-image: url("images/specialPlantNode.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8F5E9;
+    margin-right: 5px;
+}
+
+#sunsSpecialCost {
+    width: 75px;
+    height: 75px;
+    background-image: url("images/nodeSpecialSunValue.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8F5E9;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card:last-child {
+    margin-bottom: 0px;
+}
+   
