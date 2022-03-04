@@ -3,7 +3,7 @@ const path = require("path")
 const hbs = require("hbs")
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 
 app.use(express.static(__dirname + '/public'));
 
@@ -23,46 +23,51 @@ app.get("/contact", (req, res) => {
     res.render("contact")
 })
 
-app.get("https://suad-portfolio.herokuapp.com/plantsVsZombies", (req, res) => {
+app.get("http://localhost:5000/plantsVsZombies", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/PlantsVZombies/index.html`));
-})
+});
 
-app.get("https://suad-portfolio.herokuapp.com/twenty-forty-eight", (req, res) => {
+app.get("http://localhost:5000/twenty-forty-eight", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/twenty-forty-eight/index.html`));
-})
+});
 
-app.get("https://suad-portfolio.herokuapp.com/tetris", (req, res) => {
+app.get("http://localhost:5000/tetris", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/tetris/index.html`));
-})
+});
 
-app.get("https://suad-portfolio.herokuapp.com/snake", (req, res) => {
+app.get("http://localhost:5000/snake", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/snake/index.html`));
-})
+});
 
-app.get("https://suad-portfolio.herokuapp.com/cars", (req, res) => {
+app.get("http://localhost:5000/cars", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/cars/index.html`));
-})
+});
 
-app.get("https://suad-portfolio.herokuapp.com/colorTetris", (req, res) => {
+app.get("http://localhost:5000/colorTetris", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/colorTetris/index.html`));
-})
+});
 
-app.get("https://suad-portfolio.herokuapp.com/calculator", (req, res) => {
-    res.send("radi")
-    //res.sendFile(path.join(`${__dirname}/public/calculator/index.html`));
-})
+app.get("http://localhost:5000/calculator", (req, res) => {
+    res.sendFile(path.join(`${__dirname}/public/calculator/index.html`));
+});
 
-app.get("https://suad-portfolio.herokuapp.com/caseOpening", (req, res) => {
+app.get("http://localhost:5000/caseOpening", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/case/index.html`));
 })
 
-app.get("https://suad-portfolio.herokuapp.com/dice", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/public/DiceNew/index.html`));
-})
+app.get("http://localhost:5000/dice", (req, res) => {
+    //res.sendFile(path.join(`${__dirname}/public/DiceNew`));
+});
 
-app.get("https://suad-portfolio.herokuapp.com/matchingGame", (req, res) => {
+app.get("http://localhost:5000/matchingGame", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/MatchingGame/index.html`));
-})
+});
+
+app.get("http://localhost:5000/1", (req, res) => {
+   res.send("hey")
+});
+
+
 
 app.listen(port, () => {
     console.log(`Server running on ${port} port`)
