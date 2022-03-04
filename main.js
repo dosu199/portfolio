@@ -23,51 +23,45 @@ app.get("/contact", (req, res) => {
     res.render("contact")
 })
 
-app.get("http://localhost:5000/plantsVsZombies", (req, res) => {
+app.get("/plantsVsZombies", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/PlantsVZombies/index.html`));
 });
 
-app.get("http://localhost:5000/twenty-forty-eight", (req, res) => {
+app.get("/twenty-forty-eight", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/twenty-forty-eight/index.html`));
 });
 
-app.get("http://localhost:5000/tetris", (req, res) => {
+app.get("/tetris", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/tetris/index.html`));
 });
 
-app.get("http://localhost:5000/snake", (req, res) => {
+app.get("/snake", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/snake/index.html`));
 });
 
-app.get("http://localhost:5000/cars", (req, res) => {
+app.get("/cars", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/cars/index.html`));
 });
 
-app.get("http://localhost:5000/colorTetris", (req, res) => {
+app.get("/colorTetris", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/colorTetris/index.html`));
 });
 
-app.get("http://localhost:5000/calculator", (req, res) => {
+app.get("/calculator", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/calculator/index.html`));
 });
 
-app.get("http://localhost:5000/caseOpening", (req, res) => {
+app.get("/caseOpening", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/case/index.html`));
 })
 
-app.get("http://localhost:5000/dice", (req, res) => {
-    //res.sendFile(path.join(`${__dirname}/public/DiceNew`));
+app.get("/dice", (req, res) => {
+    res.sendFile(path.join(`${__dirname}/public/DiceNew/index.html`));
 });
 
-app.get("http://localhost:5000/matchingGame", (req, res) => {
+app.get("/matchingGame", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/MatchingGame/index.html`));
 });
-
-app.get("http://localhost:5000/1", (req, res) => {
-   res.send("hey")
-});
-
-
 
 app.listen(port, () => {
     console.log(`Server running on ${port} port`)
