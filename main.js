@@ -48,7 +48,8 @@ app.get("https://suad-portfolio.herokuapp.com/colorTetris", (req, res) => {
 })
 
 app.get("https://suad-portfolio.herokuapp.com/calculator", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/public/calculator/index.html`));
+    res.send("radi")
+    //res.sendFile(path.join(`${__dirname}/public/calculator/index.html`));
 })
 
 app.get("https://suad-portfolio.herokuapp.com/caseOpening", (req, res) => {
