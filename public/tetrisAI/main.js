@@ -815,17 +815,6 @@ function main() {
     })
 
 
-    let runAiSlider = document.getElementById("checkbox")
-    let runAi = false
-    runAiSlider.addEventListener("click", (e) => {
-        runAi = !runAi
-    })
-
-    runAiSlider.addEventListener("keyup", (e) => {
-        e.preventDefault()
-    })
-
-
     let tetrominoSpawned = true
     let aiRotation = 0
     let aiYPosition = 0
@@ -873,7 +862,6 @@ function main() {
         }
 
         if (msCounter > gameSpeed) {
-            if (runAi) {
                 if (tetrominoSpawned) {
                     let aiGameBoard = copyBoard(gameBoard);
                     let aiBestPosition = calculateBestTetrominoPostion(aiGameBoard, currentTetrominoRotations, tetrominosRotations[nextTetromi])
@@ -908,28 +896,24 @@ function main() {
                         currentTetrominoPosition.y += 1
                     }
                 }
-            }
+            
             
             let nextTetrominoPosition = {
                 x: currentTetrominoPosition.x + 1,
                 y: currentTetrominoPosition.y
             };
 
-            if (nextTetrominoPosition.x >= 7 && runAi)
+            if (nextTetrominoPosition.x >= 7)
                 gameSpeed = 10
             else 
                 gameSpeed = 300
             
-            if (runAi == false) 
-                gameSpeed = 600
 
             let collision = checkCollision(nextTetrominoPosition, gameBoard, currentTetromino);
             if (!collision) {
                 currentTetrominoPosition = nextTetrominoPosition;
                 drawGameBoard(gameBoard, gameBoardWidth, gameBoardHeight);
-                if (runAi == false) {
                     ghostTetromino(gameBoard, currentTetrominoPosition, currentTetromino)
-                }
                 drawTetromino(currentTetrominoPosition, currentTetromino, gameBoardWidth);
             }
             else {
