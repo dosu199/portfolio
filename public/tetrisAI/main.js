@@ -913,7 +913,6 @@ function main() {
             if (!collision) {
                 currentTetrominoPosition = nextTetrominoPosition;
                 drawGameBoard(gameBoard, gameBoardWidth, gameBoardHeight);
-                    ghostTetromino(gameBoard, currentTetrominoPosition, currentTetromino)
                 drawTetromino(currentTetrominoPosition, currentTetromino, gameBoardWidth);
             }
             else {
