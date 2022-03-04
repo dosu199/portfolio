@@ -35,6 +35,10 @@ app.get("/tetris", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/tetris/index.html`));
 });
 
+app.get("/tetrisAI", (req, res) => {
+    res.sendFile(path.join(`${__dirname}/public/tetrisAI/index.html`));
+});
+
 app.get("/snake", (req, res) => {
     res.sendFile(path.join(`${__dirname}/public/snake/index.html`));
 });

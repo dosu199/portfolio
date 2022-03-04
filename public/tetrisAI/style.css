@@ -1,0 +1,247 @@
+html ,body {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6EAF4;
+    margin: 45px auto;
+}
+#gameContainer {
+    width:560px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 133px;
+    box-sizing: content-box;
+    background-image: url("images/background.png");
+    background-repeat:no-repeat ;
+}
+
+.block {
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    
+}
+
+.row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.row :last-child {
+    border-right: none;
+}
+
+#gameContainer :nth-child(25) .block {
+    border-bottom: none;
+}
+
+.border {
+    border: 1px solid white;
+}
+
+#score {
+    background-image: url(images/backgroundStuff.png);
+    color: white;
+    font-size: 19px;
+    width: 50px;
+    height: 50px;
+    padding: 50px;
+    position: relative;
+    right: 100px;
+    top: -356px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#scoreBoard {
+    color: white;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 19px;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nextTetromino {
+    background-position: 50% 88%;
+    background-repeat: no-repeat;
+    background-color: rgb(6, 9, 24);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: 100px;
+    top: -283px;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    color: white;
+}
+
+#next {
+    font-size: 19px;
+    position: relative;
+    top: 15px;
+    right: -13px;
+}
+
+#newGame {
+    font-size: 19px;
+    position: relative;
+    right: 396px;
+    top: -86px;
+    border: none;
+    width: 147px;
+    height: 43px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(6, 9, 24);
+    border-color: rgb(6, 9, 24);
+    border-radius: 5px;
+}
+
+#newGame:hover {
+    background-color: #343a40;
+}
+
+#gameStuff {
+   
+}
+
+
+#runAi {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 19px;
+    position: relative;
+    right: 248px;
+    top: -138px;
+    border: none;
+    width: 129px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(6, 9, 24);
+    border-color: rgb(6, 9, 24);
+    border-radius: 5px;
+}
+
+#wrapper {
+    display: contents;
+}
+
+#content {
+    width: 80%;
+    height: 736px;
+    background-image: url("images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.orderNode {
+    color: white;
+    margin-right: 100px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.nameNode {
+    color: white;
+   display: flex;
+   flex: 1;
+   font-size: 20px;
+   align-items: center;
+}
+
+.scoreNode {
+    color: white;
+    display: flex;
+    font-size: 20px;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.rowLeaderboard {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #343a40;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+

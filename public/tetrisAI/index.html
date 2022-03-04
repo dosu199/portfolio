@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tetris</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="gameContainer"></div>
+        <div id="gameStuff">
+            <div id="nextTetromino"><label id="next">Next tetromino:</label></div>
+            <div id="score">
+                <div id="name">Lines cleared:</div>
+                <div id="scoreBoard">0</div>
+            </div>
+        </div>
+        <div id="runAi">
+            <span style="margin-right: 5px;">Run AI</span>
+        <label class="switch">
+            <input type="checkbox" id="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <button id="newGame">Reset</button>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
