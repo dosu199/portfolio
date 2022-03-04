@@ -24,7 +24,7 @@ app.get("/contact", (req, res) => {
 })
 
 app.get("https://suad-portfolio.herokuapp.com/plantsVsZombies", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/PlantsVZombies`));
+    res.sendFile(path.join(`${__dirname}/PlantsVZombies/index.html`));
 })
 
 app.get("https://suad-portfolio.herokuapp.com/twenty-forty-eight", (req, res) => {
