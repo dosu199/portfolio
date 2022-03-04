@@ -48,7 +48,7 @@ app.get("/colorTetris", (req, res) => {
 });
 
 app.get("/calculator", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/public/calculator/index.html`));
+    res.sendFile(path.join(`${__dirname}/public/Calculator/index.html`));
 });
 
 app.get("/caseOpening", (req, res) => {
