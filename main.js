@@ -52,7 +52,7 @@ app.get("https://suad-portfolio.herokuapp.com/calculator", (req, res) => {
 })
 
 app.get("https://suad-portfolio.herokuapp.com/caseOpening", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/public/case/index.html`));
+    res.sendFile(path.join(`${__dirname}/public/case.html`));
 })
 
 app.get("https://suad-portfolio.herokuapp.com/dice", (req, res) => {
