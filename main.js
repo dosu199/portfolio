@@ -60,7 +60,7 @@ app.get("https://suad-portfolio.herokuapp.com/dice", (req, res) => {
 })
 
 app.get("https://suad-portfolio.herokuapp.com/matchingGame", (req, res) => {
-    res.sendFile(path.join(`${__dirname}/public/matchingGame/index.html`));
+    res.sendFile(path.join(`${__dirname}/public/MatchingGame/index.html`));
 })
 
 app.listen(port, () => {
